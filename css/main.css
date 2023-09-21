@@ -1,0 +1,84 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem 'Roboto', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    letter-spacing: .1rem;
+}
+*{
+    box-sizing: border-box;
+}
+h1, h2, h3, p, ul, ol, li{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-weight: normal;
+}
+
+header{
+    color: #ffffff;
+    background: linear-gradient(to right ,RGB(0, 6, 24), RGB(0, 19, 54), RGB(0, 6, 24));
+}
+header h1{
+    text-align: center;
+    position: static;
+}
+header section p{
+    position: static;
+    margin-top: -3.2rem;
+    margin-left: 5rem;
+    max-width: 14rem;
+    padding-left: 3px;
+    border: solid 1px #000000;
+}
+header section button:nth-child(2){
+    position: absolute;
+    margin-left: 130rem;
+    margin-top: -2.6rem;
+    max-width: 15rem;
+    padding: 7px;
+    background-color: RGB(201, 178, 75);
+}
+header section button:nth-child(2):hover{
+background-color: RGB(255, 254, 192);
+}
+header section button:nth-child(3){
+    position: absolute;
+    margin-left: 145rem;
+    margin-top: -2.6rem;
+    max-width: 15rem;
+    padding: 7px;
+    background-color: aquamarine;
+}
+header section button:nth-child(4){
+    position: absolute;
+    margin-left: 160rem;
+    margin-top: -2.6rem;
+    max-width: 15rem;
+    padding: 7px;
+    background-color: aquamarine;
+}
+/* article{
+    margin-top: 100rem;
+} */
+
+main figure img{
+    margin-left: -5.1rem;
+    margin-top: -2rem;
+    max-width: 105%;
+}
+main section label:nth-child(1){
+    margin-left: 86rem;
+    border: solid 1px;
+    padding: 4px;
+}
+main section p:nth-child(2){
+    text-align: center;
+    margin-top: 3rem;
+    border: solid 1px;
+    max-width: 70%;
+    margin-left: 28rem;
+    position: relative;
+}
