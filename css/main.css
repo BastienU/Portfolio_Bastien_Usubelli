@@ -7,6 +7,11 @@ body{
     line-height: 1.6;
     letter-spacing: .1rem;
 }
+img{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
 *{
     box-sizing: border-box;
 }
@@ -50,35 +55,93 @@ header section button:nth-child(3){
     margin-top: -2.6rem;
     max-width: 15rem;
     padding: 7px;
-    background-color: aquamarine;
+    background-color: RGB(201, 178, 75);
 }
+header section button:nth-child(3):hover{
+    background-color: RGB(255, 254, 192);
+    }
 header section button:nth-child(4){
     position: absolute;
     margin-left: 160rem;
     margin-top: -2.6rem;
     max-width: 15rem;
     padding: 7px;
-    background-color: aquamarine;
+    background-color: RGB(201, 178, 75);
 }
-/* article{
-    margin-top: 100rem;
-} */
-
+header section button:nth-child(4):hover{
+    background-color: RGB(255, 254, 192);
+    }
 main figure img{
     margin-left: -5.1rem;
     margin-top: -2rem;
     max-width: 105%;
 }
-main section label:nth-child(1){
-    margin-left: 86rem;
+main .presentation label:nth-child(1){
+    margin-left: 88rem;
     border: solid 1px;
     padding: 4px;
 }
-main section p:nth-child(2){
+main .presentation p:nth-child(2){
     text-align: center;
     margin-top: 3rem;
     border: solid 1px;
     max-width: 70%;
     margin-left: 28rem;
     position: relative;
+}
+main .presentation label:nth-child(3){
+    position: absolute;
+    text-align: center;
+    padding: 3px;
+    margin-left: 92rem;
+    margin-top: 2rem;
+    border: solid 1px;
+    max-width: 105%;
+}
+main .presentation label:nth-child(5){
+    position: absolute;
+    text-align: center;
+    margin-left: 89rem;
+    margin-top: 5rem;
+    border: solid 1px;
+    padding: 4px;
+    max-width: 105%;
+}
+main .presentation ul li img{
+    max-width: 15rem;
+}
+main .presentation ul .HTML{
+    position: absolute;
+    top: 138rem;
+    left: 10rem;
+}
+main .presentation ul .CSS img{
+    position: relative;
+    top: 11.3rem;
+    left: 40rem;
+    max-width: 10.5rem;
+}
+main .presentation ul .JS{
+    position: absolute;
+    top: 138rem;
+    left: 70rem;
+    max-width: 5rem;
+}
+main .presentation ul .PHP{
+    position: absolute;
+    top: 142rem;
+    left: 100rem;
+    max-width: 5rem;
+}
+main .presentation ul .Java{
+    position: absolute;
+    top: 138rem;
+    left: 130rem;
+    max-width: 5rem;
+}
+main .presentation ul .Csharp{
+    position: absolute;
+    top: 138rem;
+    left: 160rem;
+    max-width: 5rem;
 }
