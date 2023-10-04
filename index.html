@@ -17,9 +17,9 @@
             <p>
                 Bastien Usubelli
             </p>
-            <button type="button">A propos de moi</button>
-            <button type="button">Mes projets</button>
-            <button type="button">Contact</button>
+            <a class="a_propos_de_moi" href ="#a propos de moi">A propos de moi</a>
+            <a class="mes_projets" href ="#mes_projets">Mes projets</a>
+            <a class="contact" href ="#contact">Contact</a>
         </section>
     </header>
     <main>
@@ -27,7 +27,7 @@
             <img src="./asset/ImageDev.png" alt="imageDev" loading="lazy">
         </figure>
         <section class="presentation">
-            <label for="A propos de moi">A propos de moi</label>
+            <label for="A propos de moi" id="a propos de moi">A propos de moi</label>
             <p>
                 Je m'appelle Bastien Usubelli.
                 <br>Âgé de 19 ans, je suis en seconde année de BTS SIO SLAM à l'école ITIC Paris et réalise ce portfolio
@@ -57,30 +57,42 @@
                 <li class="Csharp"><img src="./asset/Csharp_logo.png"></li>
             </ul>
         </section>
-        <section class="projets">
+        <section class="projets" id="mes_projets">
             <label for="Mes projets">Mes projets</label>
             <ul>
-                <!-- <li class="refont_design">
+                <li class="refont_design">
                     <a href="https://github.com/BastienU/Refont_design.git" target="_blank"><img src="./asset/cover.png" 
                     title="Refont_design" alt="Projet de correction du code d'un site déjà créé"></a>
-                </li> -->
-                <li><a href="lien github du projet" target="_blank">Test</a></li>
-                <li><a href="lien github du projet" target="_blank">Test</a></li>
-                <li><a href="lien github du projet" target="_blank">Test</a></li>
-                <li><a href="lien github du projet" target="_blank">Test</a></li>
-                <li><a href="lien github du projet" target="_blank">Test</a></li>
+                    <p>Refont Design</p>
+                </li>
+                <li class="etude_de_cas">
+                    <a href="https://github.com/BastienU/etude_de_cas" target="_blank"><img src="./asset/etude_de_cas.png" 
+                    title="etude_de_cas" alt="Projet de reproduction d'un site à partir d'une image"></a>
+                    <p>Etude de cas</p>
+                </li>
+                <li class="display">
+                    <a href="https://github.com/BastienU/display-grid-2022.git" target="_blank"><img src="./asset/display.png" 
+                    title="display" alt="Projet d'apprentissage de l'utilisation des différents display"></a>
+                    <p>Display</p>
+                </li>
             </ul>
         </section>
-        <div class="Curritulum vitae">Curritulum vitae
+        <div class="CV">Curritulum vitae
+            <br>
             <button type="button" target="_blank">Cliquez ici</button>
         </div>
-        <div class="Contact">Contact
+        <div class="contact" id="contact">
+            <label for="Contact">Contact</label>
             <ul>
-                <li><img src="./asset/Github.png" alt="Logo" loading="lazy"></li>
-                <li><img src="" alt="Logo" loading="lazy"></li>
-                <li><img src="" alt="Logo" loading="lazy"></li>
+                <li class="github">
+                    <img src="./asset/Github.png" alt="Logo" loading="lazy">
+                    <p>https://github.com/BastienU</p>
+                </li>
+                <li class="mail">
+                    <img src="./asset/Mail.png" alt="Logo" loading="lazy">
+                    <p>bastien.u04@gmail.com</p>
+                </li>
             </ul>
-            
         </div>
     </main>
     <footer>

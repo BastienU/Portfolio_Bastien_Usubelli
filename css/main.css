@@ -7,6 +7,8 @@ body{
     margin: 0;
     line-height: 1.6;
     letter-spacing: .1rem;
+    /* background: linear-gradient(to right ,RGB(0, 6, 24), RGB(200, 160, 100), RGB(0, 6, 24)); */
+    /* background: linear-gradient(to bottom ,RGB(0, 6, 24), RGB(200, 160, 100)); */
 }
 img{
     display: inline-block;
@@ -22,16 +24,20 @@ h1, h2, h3, p, ul, ol, li{
     list-style-type: none;
     font-weight: normal;
 }
+
 /* Initialisation du fond de l'entête du portfolio */
 header{
     color: #ffffff;
     background: linear-gradient(to right ,RGB(0, 6, 24), RGB(0, 19, 54), RGB(0, 6, 24));
 }
+
 /* Titre du portfolio */
 header h1{
     text-align: center;
     position: static;
+    font-weight: bolder;
 }
+
 /* Placement nom et prénom */
 header section p{
     position: static;
@@ -41,53 +47,68 @@ header section p{
     padding-left: 3px;
     border: solid 1px #000000;
 }
+
 /* Gestion des boutons du menu */
-header section button:nth-child(2){
+header section .a_propos_de_moi{
+    color: #000000;
     position: absolute;
-    margin-left: 130rem;
-    margin-top: -2.6rem;
+    left: 130rem;
+    top: 2rem;
+    border: solid 1px #000000;
     max-width: 15rem;
-    padding: 7px;
+    padding: 3px;
+    text-decoration: none;
+    animation-direction: normal;
+    animation-duration: 7s;
     background-color: RGB(201, 178, 75);
 }
-header section button:nth-child(2):hover{
+header section .a_propos_de_moi:hover{
 background-color: RGB(255, 254, 192);
 }
-header section button:nth-child(3){
+header section .mes_projets{
+    color: #000000;
     position: absolute;
-    margin-left: 145rem;
-    margin-top: -2.6rem;
+    text-decoration: none;
+    left: 147rem;
+    top: 2rem;
     max-width: 15rem;
-    padding: 7px;
+    padding: 3px;
     background-color: RGB(201, 178, 75);
 }
-header section button:nth-child(3):hover{
+header section .mes_projets:hover{
     background-color: RGB(255, 254, 192);
     }
-header section button:nth-child(4){
+header section .contact{
+    color: #000000;
     position: absolute;
-    margin-left: 157rem;
-    margin-top: -2.6rem;
+    text-decoration: none;
+    left: 160rem;
+    top: 2rem;
     max-width: 15rem;
-    padding: 7px;
+    padding: 3px;
     background-color: RGB(201, 178, 75);
 }
-header section button:nth-child(4):hover{
+header section .contact:hover{
     background-color: RGB(255, 254, 192);
 }
 /* Fin gestion des boutons du menu */
+
 /* Placement de l'image principale du portfolio */
 main figure img{
     margin-left: -5.1rem;
     margin-top: -2rem;
     max-width: 105%;
 }
+
 /* Label "à propos de moi" */
 main .presentation label:nth-child(1){
-    margin-left: 88rem;
+    margin-left: 87rem;
     border: solid 1px;
     padding: 4px;
+    font-size: 2rem;
+    font-weight: bold;
 }
+
 /* Texte "à propos de moi" */
 main .presentation p:nth-child(2){
     text-align: center;
@@ -97,16 +118,20 @@ main .presentation p:nth-child(2){
     margin-left: 28rem;
     position: relative;
 }
+
 /* Label "Etudes" */
 main .presentation label:nth-child(3){
     position: absolute;
     text-align: center;
     padding: 3px;
-    margin-left: 92rem;
+    margin-left: 90.5rem;
     margin-top: 2rem;
     border: solid 1px;
     max-width: 105%;
+    font-size: 2rem;
+    font-weight: bold;
 }
+
 /* Ligne chronologique études */
 hr{
     position: absolute;
@@ -116,10 +141,7 @@ hr{
     rotate: 90deg;
     z-index: -1;
 }
-/* Gestion image chronologie études */
-main .presentation ul li{
-    /* max-width: 15rem;  */
-}
+
 /* Gestion image BTS*/
 main .presentation ul .BTS img{
     margin-top: 5rem;
@@ -127,6 +149,7 @@ main .presentation ul .BTS img{
     clip-path: circle(40%);
     max-width: 15rem;
 }
+
 /* Gestion texte BTS */
 main .presentation ul .BTS p{
     border: none;
@@ -135,12 +158,14 @@ main .presentation ul .BTS p{
     left: 42rem;
     max-width: 20rem;
 }
+
 /* Gestion image BAC*/
 main .presentation ul .BAC img{
     margin-top: 15rem;
     margin-left: 81rem;
     max-width: 30rem;
 }
+
 /* Gestion texte BAC */
 main .presentation ul .BAC p{
     border: none;
@@ -149,16 +174,20 @@ main .presentation ul .BAC p{
     left: 76rem;
     max-width: 18rem;
 }
+
 /* Label "Compétences" */
 main .presentation label:nth-child(7){
     position: absolute;
     text-align: center;
-    margin-left: 89rem;
+    margin-left: 87.5rem;
     margin-top: 0rem;
     border: solid 1px;
     padding: 4px;
     max-width: 105%;
+    font-size: 2rem;
+    font-weight: bold;
 }
+
 /* Gestion des images des langages de programmation */
 main .presentation ul li img{
     max-width: 15rem;
@@ -198,12 +227,96 @@ main .presentation ul .Csharp{
     max-width: 5rem;
 }
 /* Fin gestion des images des langages de programmation */
+
+/* Label "Mes projets" */
 .projets label{
     position: absolute;
     text-align: center;
     padding: 3px;
-    margin-left: 92rem;
+    margin-left: 90rem;
     margin-top: 10rem;
     border: solid 1px;
     max-width: 105%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Images projets développement */
+.projets ul .refont_design a img{
+    width: 50rem;
+    margin-top: 22rem;
+    margin-left: 10rem;
+}
+.projets ul .etude_de_cas a img{
+    width: 70rem;
+    margin-top: -35rem;
+    margin-left: 65rem;
+}
+.projets ul .display a img{
+    width: 30rem;
+    margin-top: -43rem;
+    margin-left: 140rem;
+}
+/* Fin images projets développement */
+
+/* Nom des projets de développement */
+.projets ul .refont_design p{
+    position: absolute;
+    top: 257.4rem;
+    left: 28rem;
+}
+.projets ul .etude_de_cas p{
+    margin-left: 96rem;
+}
+.projets ul .display p{
+    margin-top: -5rem;
+    margin-left: 150rem;
+}
+/* Fin positionnement des noms des projets */
+
+.CV{
+    margin-top: 5rem;
+    margin-left: 91rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.CV button{
+    color: #ffffff;
+    margin-left: 5rem;
+    background-color: RGB(0, 19, 54);
+}
+.CV button:hover{
+    color: #000000;
+    background-color: RGB(255, 254, 192);
+}
+
+main .contact label{
+    position: absolute;
+    top: 279rem;
+    left: 94rem;
+    border: solid 1px #000000;
+    padding: 3px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+main .contact ul .github img{
+    max-width: 15rem;
+    margin-top: 15rem;
+    margin-left: 60rem;
+}
+main .contact ul .github p{
+    margin-top: 1rem;
+    margin-left: 57rem;
+}
+main .contact ul .mail img{
+    max-width: 15rem;
+    margin-top: -24.7rem;
+    margin-left: 120rem;
+}
+main .contact ul .mail p{
+    margin-top: -5rem;
+    margin-left: 118rem;
+}
+footer{
+    margin-left: 93rem;
 }
