@@ -1,3 +1,4 @@
+/* Reset CSS */
 html{
     font-size: 62.5%;
 }
@@ -21,15 +22,17 @@ h1, h2, h3, p, ul, ol, li{
     list-style-type: none;
     font-weight: normal;
 }
-
+/* Initialisation du fond de l'entête du portfolio */
 header{
     color: #ffffff;
     background: linear-gradient(to right ,RGB(0, 6, 24), RGB(0, 19, 54), RGB(0, 6, 24));
 }
+/* Titre du portfolio */
 header h1{
     text-align: center;
     position: static;
 }
+/* Placement nom et prénom */
 header section p{
     position: static;
     margin-top: -3.2rem;
@@ -38,6 +41,7 @@ header section p{
     padding-left: 3px;
     border: solid 1px #000000;
 }
+/* Gestion des boutons du menu */
 header section button:nth-child(2){
     position: absolute;
     margin-left: 130rem;
@@ -62,7 +66,7 @@ header section button:nth-child(3):hover{
     }
 header section button:nth-child(4){
     position: absolute;
-    margin-left: 160rem;
+    margin-left: 157rem;
     margin-top: -2.6rem;
     max-width: 15rem;
     padding: 7px;
@@ -70,17 +74,21 @@ header section button:nth-child(4){
 }
 header section button:nth-child(4):hover{
     background-color: RGB(255, 254, 192);
-    }
+}
+/* Fin gestion des boutons du menu */
+/* Placement de l'image principale du portfolio */
 main figure img{
     margin-left: -5.1rem;
     margin-top: -2rem;
     max-width: 105%;
 }
+/* Label "à propos de moi" */
 main .presentation label:nth-child(1){
     margin-left: 88rem;
     border: solid 1px;
     padding: 4px;
 }
+/* Texte "à propos de moi" */
 main .presentation p:nth-child(2){
     text-align: center;
     margin-top: 3rem;
@@ -89,6 +97,7 @@ main .presentation p:nth-child(2){
     margin-left: 28rem;
     position: relative;
 }
+/* Label "Etudes" */
 main .presentation label:nth-child(3){
     position: absolute;
     text-align: center;
@@ -98,50 +107,103 @@ main .presentation label:nth-child(3){
     border: solid 1px;
     max-width: 105%;
 }
-main .presentation label:nth-child(5){
+/* Ligne chronologique études */
+hr{
+    position: absolute;
+    top: 155rem;
+    left: 80rem;
+    width: 30rem;
+    rotate: 90deg;
+    z-index: -1;
+}
+/* Gestion image chronologie études */
+main .presentation ul li{
+    /* max-width: 15rem;  */
+}
+/* Gestion image BTS*/
+main .presentation ul .BTS img{
+    margin-top: 5rem;
+    margin-left: 87.5rem;
+    clip-path: circle(40%);
+    max-width: 15rem;
+}
+/* Gestion texte BTS */
+main .presentation ul .BTS p{
+    border: none;
+    position: absolute;
+    top: 131.8rem;
+    left: 42rem;
+    max-width: 20rem;
+}
+/* Gestion image BAC*/
+main .presentation ul .BAC img{
+    margin-top: 15rem;
+    margin-left: 81rem;
+    max-width: 30rem;
+}
+/* Gestion texte BAC */
+main .presentation ul .BAC p{
+    border: none;
+    position: absolute;
+    top: 163.4rem;
+    left: 76rem;
+    max-width: 18rem;
+}
+/* Label "Compétences" */
+main .presentation label:nth-child(7){
     position: absolute;
     text-align: center;
     margin-left: 89rem;
-    margin-top: 5rem;
+    margin-top: 0rem;
     border: solid 1px;
     padding: 4px;
     max-width: 105%;
 }
+/* Gestion des images des langages de programmation */
 main .presentation ul li img{
     max-width: 15rem;
 }
 main .presentation ul .HTML{
     position: absolute;
-    top: 138rem;
+    top: 190rem;
     left: 10rem;
 }
 main .presentation ul .CSS img{
-    position: relative;
-    top: 11.3rem;
-    left: 40rem;
+    margin-top: 10.2rem;
+    margin-left: 40rem;
     max-width: 10.5rem;
 }
 main .presentation ul .JS{
     position: absolute;
-    top: 138rem;
+    top: 190rem;
     left: 70rem;
     max-width: 5rem;
 }
 main .presentation ul .PHP{
     position: absolute;
-    top: 142rem;
+    top: 194rem;
     left: 100rem;
     max-width: 5rem;
 }
 main .presentation ul .Java{
     position: absolute;
-    top: 138rem;
+    top: 190rem;
     left: 130rem;
     max-width: 5rem;
 }
 main .presentation ul .Csharp{
     position: absolute;
-    top: 138rem;
+    top: 190rem;
     left: 160rem;
     max-width: 5rem;
+}
+/* Fin gestion des images des langages de programmation */
+.projets label{
+    position: absolute;
+    text-align: center;
+    padding: 3px;
+    margin-left: 92rem;
+    margin-top: 10rem;
+    border: solid 1px;
+    max-width: 105%;
 }
