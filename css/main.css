@@ -7,8 +7,10 @@ body{
     margin: 0;
     line-height: 1.6;
     letter-spacing: .1rem;
-    /* background: linear-gradient(to right ,RGB(0, 6, 24), RGB(200, 160, 100), RGB(0, 6, 24)); */
-    /* background: linear-gradient(to bottom ,RGB(0, 6, 24), RGB(200, 160, 100)); */
+    width: 189.9rem;
+    background: linear-gradient(to right ,RGB(0, 6, 24), RGB(200, 160, 100), RGB(0, 6, 24));
+    filter: drop-shadow(0 0 0.60rem rgb(224, 231, 123));
+    color: azure;
 }
 img{
     display: inline-block;
@@ -276,7 +278,7 @@ main .presentation ul .Csharp{
 
 .CV{
     margin-top: 5rem;
-    margin-left: 91rem;
+    margin-left: 89.5rem;
     font-size: 2rem;
     font-weight: bold;
 }
