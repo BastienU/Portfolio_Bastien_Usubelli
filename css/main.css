@@ -292,11 +292,12 @@ main .presentation ul .Csharp{
     background-color: RGB(255, 254, 192);
 }
 
+/* Label contact */
 main .contact label{
     position: absolute;
     top: 279rem;
     left: 94rem;
-    border: solid 1px #000000;
+    border: solid 1px #ffffff;
     padding: 3px;
     font-size: 2rem;
     font-weight: bold;
