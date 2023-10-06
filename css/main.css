@@ -7,6 +7,7 @@ body{
     margin: 0;
     line-height: 1.6;
     letter-spacing: .1rem;
+    max-width: 189.9rem;
     width: 189.9rem;
     background: linear-gradient(to right ,RGB(0, 6, 24), RGB(200, 160, 100), RGB(0, 6, 24));
     filter: drop-shadow(0 0 0.60rem rgb(224, 231, 123));
@@ -109,6 +110,7 @@ main .presentation h2:nth-child(1){
     padding: 4px;
     font-size: 2rem;
     font-weight: bold;
+    max-width: 18.4rem;
 }
 
 /* Texte "à propos de moi" */
@@ -118,7 +120,6 @@ main .presentation p:nth-child(2){
     border: solid 1px;
     max-width: 70%;
     margin-left: 28rem;
-    position: relative;
 }
 
 /* Titre "Etudes" */
@@ -156,7 +157,7 @@ main .presentation ul .BTS img{
 main .presentation ul .BTS p{
     border: none;
     position: absolute;
-    top: 131.8rem;
+    top: 133rem;
     left: 42rem;
     max-width: 20rem;
 }
@@ -172,7 +173,7 @@ main .presentation ul .BAC img{
 main .presentation ul .BAC p{
     border: none;
     position: absolute;
-    top: 163.4rem;
+    top: 164.5rem;
     left: 76rem;
     max-width: 18rem;
 }
@@ -195,37 +196,33 @@ main .presentation ul li img{
     max-width: 15rem;
 }
 main .presentation ul .HTML{
-    position: absolute;
-    top: 190rem;
-    left: 10rem;
+    margin-top: 15rem;
+    margin-left: 10rem;
+    max-width: 5rem;
 }
 main .presentation ul .CSS img{
-    margin-top: 10.2rem;
+    margin-top: -18rem;
     margin-left: 40rem;
     max-width: 10.5rem;
 }
 main .presentation ul .JS{
-    position: absolute;
-    top: 190rem;
-    left: 70rem;
+    margin-top: -17.6rem;
+    margin-left: 70rem;
     max-width: 5rem;
 }
 main .presentation ul .PHP{
-    position: absolute;
-    top: 194rem;
-    left: 100rem;
+    margin-top: -11rem;
+    margin-left: 100rem;
     max-width: 5rem;
 }
 main .presentation ul .Java{
-    position: absolute;
-    top: 190rem;
-    left: 130rem;
+    margin-top: -17rem;
+    margin-left: 130rem;
     max-width: 5rem;
 }
 main .presentation ul .Csharp{
-    position: absolute;
-    top: 190rem;
-    left: 160rem;
+    margin-top: -15rem;
+    margin-left: 160rem;
     max-width: 5rem;
 }
 /* Fin gestion des images des langages de programmation */
@@ -239,38 +236,45 @@ main .presentation ul .Csharp{
     margin-top: 10rem;
     border: solid 1px;
     max-width: 105%;
+    width: 15rem;
     font-size: 2rem;
     font-weight: bold;
 }
 
 /* Images projets développement */
 .projets ul .refont_design a img{
-    width: 50rem;
+    max-width: 50rem;
     margin-top: 22rem;
     margin-left: 10rem;
 }
 .projets ul .etude_de_cas a img{
-    width: 70rem;
-    margin-top: -35rem;
+    max-width: 70rem;
+    margin-top: -55rem;
     margin-left: 65rem;
 }
 .projets ul .display a img{
-    width: 30rem;
-    margin-top: -43rem;
+    max-width: 30rem;
+    margin-top: -55rem;
     margin-left: 140rem;
 }
 /* Fin images projets développement */
 
 /* Nom des projets de développement */
 .projets ul .refont_design p{
-    position: absolute;
-    top: 257.4rem;
-    left: 28rem;
+    max-width: 50rem;
+    width: 50rem;
+    margin-top: 10rem;
+    margin-left: 28rem;
 }
 .projets ul .etude_de_cas p{
+    max-width: 50rem;
+    width: 20rem;
     margin-left: 96rem;
+    margin-top: -5.3rem;
 }
 .projets ul .display p{
+    max-width: 50rem;
+    width: 10rem;
     margin-top: -5rem;
     margin-left: 150rem;
 }
@@ -281,6 +285,8 @@ main .presentation ul .Csharp{
     margin-left: 89.5rem;
     font-size: 2rem;
     font-weight: bold;
+    max-width: 20rem;
+    width: 20rem;
 }
 .CV button{
     color: #ffffff;
@@ -294,13 +300,14 @@ main .presentation ul .Csharp{
 
 /* Titre contact */
 main .contact h2{
-    position: absolute;
-    top: 279rem;
-    left: 94rem;
+    margin-top: 5rem;
+    margin-left: 94rem;
     border: solid 1px #ffffff;
     padding: 3px;
     font-size: 2rem;
     font-weight: bold;
+    max-width: 20rem;
+    width: 9rem;
 }
 main .contact ul .github img{
     max-width: 15rem;
@@ -322,4 +329,6 @@ main .contact ul .mail p{
 }
 footer{
     margin-left: 93rem;
+    max-width: 20rem;
+    width: 20rem;
 }
