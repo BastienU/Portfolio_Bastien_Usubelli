@@ -1,6 +1,7 @@
 /* Reset CSS */
 html{
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 body{
     font: 1.6rem 'Roboto', sans-serif;
