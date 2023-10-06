@@ -8,7 +8,7 @@ body{
     line-height: 1.6;
     letter-spacing: .1rem;
     max-width: 189.9rem;
-    width: 189.9rem;
+   /*  width: 189.9rem; */
     background: linear-gradient(to right ,RGB(0, 6, 24), RGB(200, 160, 100), RGB(0, 6, 24));
     filter: drop-shadow(0 0 0.60rem rgb(224, 231, 123));
     color: azure;
