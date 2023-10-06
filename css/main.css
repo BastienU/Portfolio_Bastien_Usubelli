@@ -41,7 +41,7 @@ header h1{
 }
 
 /* Placement nom et prénom */
-header section p{
+header .menu p{
     position: static;
     margin-top: -3.2rem;
     margin-left: 5rem;
@@ -51,7 +51,7 @@ header section p{
 }
 
 /* Gestion des boutons du menu */
-header section .a_propos_de_moi{
+header .menu .a_propos_de_moi{
     color: #000000;
     position: absolute;
     left: 130rem;
@@ -64,10 +64,10 @@ header section .a_propos_de_moi{
     animation-duration: 7s;
     background-color: RGB(201, 178, 75);
 }
-header section .a_propos_de_moi:hover{
+header .menu .a_propos_de_moi:hover{
 background-color: RGB(255, 254, 192);
 }
-header section .mes_projets{
+header .menu .mes_projets{
     color: #000000;
     position: absolute;
     text-decoration: none;
@@ -77,10 +77,10 @@ header section .mes_projets{
     padding: 3px;
     background-color: RGB(201, 178, 75);
 }
-header section .mes_projets:hover{
+header .menu .mes_projets:hover{
     background-color: RGB(255, 254, 192);
     }
-header section .contact{
+header .menu .contact{
     color: #000000;
     position: absolute;
     text-decoration: none;
@@ -90,7 +90,7 @@ header section .contact{
     padding: 3px;
     background-color: RGB(201, 178, 75);
 }
-header section .contact:hover{
+header .menu .contact:hover{
     background-color: RGB(255, 254, 192);
 }
 /* Fin gestion des boutons du menu */
@@ -102,8 +102,8 @@ main figure img{
     max-width: 105%;
 }
 
-/* Label "à propos de moi" */
-main .presentation label:nth-child(1){
+/* Titre "à propos de moi" */
+main .presentation h2:nth-child(1){
     margin-left: 87rem;
     border: solid 1px;
     padding: 4px;
@@ -121,8 +121,8 @@ main .presentation p:nth-child(2){
     position: relative;
 }
 
-/* Label "Etudes" */
-main .presentation label:nth-child(3){
+/* Titre "Etudes" */
+main .presentation h2:nth-child(3){
     position: absolute;
     text-align: center;
     padding: 3px;
@@ -140,7 +140,7 @@ hr{
     top: 155rem;
     left: 80rem;
     width: 30rem;
-    rotate: 90deg;
+    transform: rotate(90deg);
     z-index: -1;
 }
 
@@ -177,8 +177,8 @@ main .presentation ul .BAC p{
     max-width: 18rem;
 }
 
-/* Label "Compétences" */
-main .presentation label:nth-child(7){
+/* Titre "Compétences" */
+main .presentation h2:nth-child(7){
     position: absolute;
     text-align: center;
     margin-left: 87.5rem;
@@ -230,8 +230,8 @@ main .presentation ul .Csharp{
 }
 /* Fin gestion des images des langages de programmation */
 
-/* Label "Mes projets" */
-.projets label{
+/* Titre "Mes projets" */
+.projets h2{
     position: absolute;
     text-align: center;
     padding: 3px;
@@ -292,8 +292,8 @@ main .presentation ul .Csharp{
     background-color: RGB(255, 254, 192);
 }
 
-/* Label contact */
-main .contact label{
+/* Titre contact */
+main .contact h2{
     position: absolute;
     top: 279rem;
     left: 94rem;

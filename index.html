@@ -13,52 +13,52 @@
         <h1>
             Portfolio
         </h1>
-        <section>
+        <nav class="menu">
             <p>
                 Bastien Usubelli
             </p>
-            <a class="a_propos_de_moi" href ="#a propos de moi">A propos de moi</a>
+            <a class="a_propos_de_moi" href ="#a_propos_de_moi">A propos de moi</a>
             <a class="mes_projets" href ="#mes_projets">Mes projets</a>
             <a class="contact" href ="#contact">Contact</a>
-        </section>
+        </nav>
     </header>
     <main>
         <figure>
-            <img src="./asset/ImageDev.png" alt="imageDev" loading="lazy" aria-labelledby="imageDev">
+            <img src="./asset/ImageDev.png" alt="imageDev" loading="lazy">
         </figure>
         <section class="presentation">
-            <label for="A propos de moi" id="a propos de moi">A propos de moi</label>
+            <h2 id="a_propos_de_moi">A propos de moi</h2>
             <p>
                 Je m'appelle Bastien Usubelli.
                 <br>Âgé de 19 ans, je suis en seconde année de BTS SIO SLAM à l'école ITIC Paris et réalise ce portfolio
                 avec ce que j'ai appris durant ces années.
             </p>
-            <label for="Etudes">Etudes</label>
+            <h2>Etudes</h2>
             <br>
             <hr>
             <ul>
                 <li class="BTS">
-                    <img src="./asset/Ordinateur_debut_etudes.jpg">
+                    <img src="./asset/Ordinateur_debut_etudes.jpg" alt="imageOrdinateur">
                     <p>Début du BTS en 2022 et fin prévue en 2024</p>
                 </li>
                 <li class="BAC">
-                    <img src="./asset/Baccalauréat.png">
+                    <img src="./asset/Baccalauréat.png" alt="imageBac">
                     <p>Baccalauréat général en 2022</p>
                 </li>
             </ul>
             
-            <label for="Compétences">Compétences</label>
+            <h2>Compétences</h2>
             <ul>
-                <li class="HTML"><img src="./asset/HTML5_logo.png"></li>
-                <li class="CSS"><img src="./asset/CSS3_logo.png"></li>
-                <li class="JS"><img src="./asset/JavaScript-logo.png"></li>
-                <li class="PHP"><img src="./asset/PHP-logo.png"></li>
-                <li class="Java"><img src="./asset/Java_logo.png"></li>
-                <li class="Csharp"><img src="./asset/Csharp_logo.png"></li>
+                <li class="HTML"><img src="./asset/HTML5_logo.png" alt="logoHTML"></li>
+                <li class="CSS"><img src="./asset/CSS3_logo.png" alt="logoCSS"></li>
+                <li class="JS"><img src="./asset/JavaScript-logo.png" alt="logoJS"></li>
+                <li class="PHP"><img src="./asset/PHP-logo.png" alt="logoPHP"></li>
+                <li class="Java"><img src="./asset/Java_logo.png" alt="logoJava"></li>
+                <li class="Csharp"><img src="./asset/Csharp_logo.png" alt="logoCsharp"></li>
             </ul>
         </section>
         <section class="projets" id="mes_projets">
-            <label for="Mes projets">Mes projets</label>
+            <h2>Mes projets</h2>
             <ul>
                 <li class="refont_design">
                     <a href="https://github.com/BastienU/Refont_design.git" target="_blank"><img src="./asset/cover.png" 
@@ -79,10 +79,12 @@
         </section>
         <div class="CV">Curritulum vitae
             <br>
-            <button type="button" target="_blank">Cliquez ici</button>
+            <form action="https://fr.w3docs.com/" method="get" target="_blank">
+                <button type="button">Cliquez ici</button>
+            </form>
         </div>
         <div class="contact" id="contact">
-            <label for="Contact">Contact</label>
+            <h2>Contact</h2>
             <ul>
                 <li class="github">
                     <img src="./asset/Github.png" alt="Logo" loading="lazy">
@@ -96,7 +98,9 @@
         </div>
     </main>
     <footer>
-        &copy; - MIT - 2023
+        <p>
+            &copy; - MIT - 2023
+        </p>
     </footer>
 </body>
 </html>
