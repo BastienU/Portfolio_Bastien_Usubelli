@@ -1,7 +1,7 @@
 /* Reset CSS */
-html{
+html{ /* sélecteur propriété valeur */
     font-size: 62.5%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 body{
     font: 1.6rem 'Roboto', sans-serif;
@@ -16,6 +16,7 @@ img{
     display: inline-block;
     height: 100%;
     vertical-align: middle;
+    max-width: 181.9vh;
 }
 *{
     box-sizing: border-box;
@@ -25,6 +26,13 @@ h1, h2, h3, p, ul, ol, li{
     margin: 0;
     list-style-type: none;
     font-weight: normal;
+}
+
+/* Placement de l'image principale du portfolio */
+main figure img{
+    margin: -1.6rem -4rem;
+    position: sticky;
+    z-index: -1;
 }
 
 /* Initialisation du fond de l'entête du portfolio */
@@ -97,14 +105,7 @@ header .menu .contact:hover{
 }
 /* Fin gestion des boutons du menu */
 
-/* Placement de l'image principale du portfolio */
-main{
-    max-width: 120rem;
-    margin: 0 auto;
-}
-main figure img{
-    max-width: 200vh;
-}
+
 
 /* Titre "à propos de moi" */
 main .presentation h2:nth-child(1){
