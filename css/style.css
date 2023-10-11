@@ -1,7 +1,7 @@
 /* Reset CSS */
-html{ /* sélecteur propriété valeur */
+html{
     font-size: 62.5%;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     max-width: 181.9vh;
 }
 body{
@@ -32,7 +32,7 @@ h1, h2, h3, p, ul, ol, li{
 /* Placement de l'image principale du portfolio */
 main figure img{
     margin: -1.6rem -4rem;
-    position: sticky;
+    position: relative;
     z-index: -1;
 }
 
@@ -65,8 +65,8 @@ header .menu p{
 header .menu .a_propos_de_moi{
     color: #000000;
     position: absolute;
-    left: 114vh;
     top: 2vh;
+    left: 114vh;
     border: solid 1px #000000;
     max-width: 23vh;
     padding: 3px;
@@ -296,11 +296,11 @@ main .presentation ul .Csharp{
 
 .CV{
     position: absolute;
-    margin-top: 14vh;
-    margin-left: 86.5vh;
+    top: 292vh;
+    left: 85vh;
     font-size: 2rem;
     font-weight: bold;
-    max-width: 20vh;
+    max-width: 30vh;
 }
 .CV button{
     color: #ffffff;
