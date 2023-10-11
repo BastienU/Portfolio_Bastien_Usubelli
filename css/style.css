@@ -295,19 +295,25 @@ main .presentation ul .Csharp{
 /* Fin positionnement des noms des projets */
 
 .CV{
-    position: absolute;
-    top: 292vh;
-    left: 85vh;
-    font-size: 2rem;
-    font-weight: bold;
-    max-width: 30vh;
+    position: relative;
 }
-.CV button{
+.CV p{
+    position: absolute;
+    top: 8vh;
+    left: 86.5vh;
+}
+.CV .clique{
+    position: absolute;
     color: #ffffff;
-    margin-left: 4vh;
+    top: 12vh;
+    left: 88.3vh;
+    padding: 3px;
+    max-width: 25vh;
+    border: solid 1px #000000;
+    text-decoration: none;
     background-color: RGB(0, 19, 54);
 }
-.CV button:hover{
+.CV a:hover{
     color: #000000;
     background-color: RGB(255, 254, 192);
 }
@@ -319,7 +325,7 @@ main .contact{
 /* Titre contact */
 main .contact h2{
     position: absolute;
-    top: 5vh;
+    top: 15vh;
     left: 88.5vh;
     border: solid 1px;
     padding: 3px;
@@ -329,11 +335,11 @@ main .contact h2{
 }
 main .contact ul{
     position: absolute;
-    top: 10vh;
+    top: 20vh;
 }
 main .contact ul .github img{
     max-width: 15vh;
-    margin-top: 15vh;
+    margin-top: 5vh;
     margin-left: 60vh;
 }
 main .contact ul .github p{
@@ -342,7 +348,7 @@ main .contact ul .github p{
 }
 main .contact ul .mail img{
     max-width: 15vh;
-    margin-top: -24.7vh;
+    margin-top: -24.5vh;
     margin-left: 120vh;
 }
 main .contact ul .mail p{
