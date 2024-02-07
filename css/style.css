@@ -274,6 +274,12 @@ main .presentation ul .Csharp{
     margin-top: -55vh;
     margin-left: 140vh;
 }
+
+.projets ul .projet_professionnel a img{
+    max-width: 30vh;
+    margin-top: 5vh;
+    margin-left: 80vh;
+}
 /* Fin images projets développement */
 
 /* Nom des projets de développement */
@@ -291,6 +297,11 @@ main .presentation ul .Csharp{
     max-width: 50vh;
     margin-top: -5vh;
     margin-left: 150vh;
+}
+.projets ul .projet_professionnel p{
+    max-width: 50vh;
+    margin-top: 3vh;
+    margin-left: 45vw;
 }
 /* Fin positionnement des noms des projets */
 
