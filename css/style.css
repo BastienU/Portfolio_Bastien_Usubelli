@@ -26,7 +26,10 @@ h1,h2,h3,p,figure,ul,ol{
 *{
     box-sizing: border-box;
 }
-
+a{
+    text-decoration: none;
+    color: #fff;
+}
 /* theme */
 
 /* Menu for moving on the site */
@@ -289,7 +292,7 @@ section.projets ul{
 .projets ul .refont_design p{
     display: block;
     color: #ffffff;
-    text-decoration-style: none;
+    text-decoration: none;
     max-width: 50vh;
     margin-top: 2vh;
     margin-left: 15vw;
@@ -301,7 +304,7 @@ section.projets ul{
     margin-top: 2vh;
     margin-left: 47vw;
 }
-.projets ul .projet_professionnel a p{
+.projets ul .projet_professionnel p{
     display: block;
     color: #ffffff;
     max-width: 50vh;
@@ -310,7 +313,10 @@ section.projets ul{
 }
 /* Fin positionnement des noms des projets */
 
-
+.projets ul p a{
+    display: block;
+    cursor: pointer;
+}
 /* 
 .CV{
     position: relative;
@@ -340,8 +346,9 @@ main .contact{
     position: relative;
     margin: 0 auto;
 } 
-/* Titre contact */
 
+
+/* Titre contact */
 
 main .contact h2{
     position: relative;
