@@ -10,45 +10,45 @@
 </head>
 <body>
     <header>
-        <h1>
-            Portfolio
-        </h1>
+        <!-- Navigation menu -->
         <nav class="menu">
-            <p>
-                Bastien Usubelli
-            </p>
-            <a class="a_propos_de_moi" href ="#a_propos_de_moi">A propos de moi</a>
-            <a class="mes_projets" href ="#mes_projets">Mes projets</a>
-            <a class="contact" href ="#contact">Contact</a>
+            <h1>
+                <a href="#">Portfolio</a>
+            </h1>
+            <p>Bastien Usubelli</p>
+            <ul>
+                <li><a href="#a_propos_de_moi">A PROPOS DE MOI</a></li>
+                <li><a href="#mes_projets">MES PROJETS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
         </nav>
+        <img src="./asset/ImageDev.png" alt="logo">
+        <!-- End Navigation menu -->
     </header>
     <main>
-        <figure>
-            <img src="./asset/ImageDev.png" alt="imageDev" loading="lazy">
-        </figure>
         <section class="presentation">
-            <h2 id="a_propos_de_moi">A propos de moi</h2>
-            <p>
+            <h2 id="a_propos_de_moi" class="a_propos">A propos de moi</h2>
+            <p class="a_propos">
                 Je m'appelle Bastien Usubelli.
-                <br>Âgé de 19 ans, je suis en seconde année de BTS SIO SLAM à l'école ITIC Paris et réalise ce portfolio
+                <br>Âgé de 20 ans, je suis en seconde année de BTS SIO SLAM à l'école ITIC Paris et réalise ce portfolio
                 avec ce que j'ai appris durant ces années.
             </p>
-            <h2>Etudes</h2>
+            <h2 class="etudes">Etudes</h2>
             <br>
             <hr>
             <ul>
                 <li class="BTS">
                     <img src="./asset/Ordinateur_debut_etudes.jpg" alt="imageOrdinateur">
-                    <p>Début du BTS en 2022 et fin prévue en 2024</p>
+                    <!-- <p>Début du BTS en 2022 et fin prévue en 2024</p> -->
                 </li>
                 <li class="BAC">
                     <img src="./asset/Baccalauréat.png" alt="imageBac">
-                    <p>Baccalauréat général en 2022</p>
+                    <!-- <p>Baccalauréat général en 2022</p> -->
                 </li>
             </ul>
             
-            <h2>Compétences</h2>
-            <ul>
+            <h2 class="competences">Compétences</h2>
+            <ul class="competences">
                 <li class="HTML"><img src="./asset/HTML5_logo.png" alt="logoHTML"></li>
                 <li class="CSS"><img src="./asset/CSS3_logo.png" alt="logoCSS"></li>
                 <li class="JS"><img src="./asset/JavaScript-logo.png" alt="logoJS"></li>
@@ -57,30 +57,34 @@
                 <li class="Csharp"><img src="./asset/Csharp_logo.png" alt="logoCsharp"></li>
             </ul>
         </section>
+        
         <section class="projets" id="mes_projets">
             <h2>Mes projets</h2>
             <ul>
                 <li class="refont_design">
-                    <a href="https://github.com/BastienU/Refont_design.git" target="_blank"><img src="./asset/cover.png" 
-                    title="Refont_design" alt="Projet de correction du code d'un site déjà créé"></a>
-                    <p>Refont Design</p>
+                    <a href="https://github.com/BastienU/Refont_design.git" target="_blank">
+                        <img src="./asset/cover500.png" title="Refont_design" alt="Projet de correction du code d'un site déjà créé">
+                        <p>Refont Design</p>
+                    </a>
                 </li>
                 <li class="etude_de_cas">
-                    <a href="https://github.com/BastienU/etude_de_cas" target="_blank"><img src="./asset/etude_de_cas.png" 
-                    title="etude_de_cas" alt="Projet de reproduction d'un site à partir d'une image"></a>
-                    <p>Etude de cas</p>
+                    <a href="https://github.com/BastienU/etude_de_cas" target="_blank">
+                        <img src="./asset/CaseStudies500.png" title="etude_de_cas" alt="Projet de reproduction d'un site à partir d'une image">
+                        <p>Etude de cas</p>
+                    </a>
                 </li>
                 <li class="projet_professionnel">
-                    <a href="./projet_java.html" target="_blank"><img src="./asset/Projet_professionnel_java.png" 
-                    title="projet_professionnel" alt="Projet professionnel backend en Java"></a>
-                    <p>Projet de Professionnalisation</p>
+                    <a href="./projet_java.html" target="_blank">
+                        <img src="./asset/Projet_professionnel_java500.png" title="projet_professionnel" alt="Projet professionnel backend en Java">
+                        <p>Projet de Professionnalisation</p>
+                    </a>
                 </li>
             </ul>
         </section>
-        <div class="CV"><p>Curritulum vitae</p>
+        <!-- <div class="CV"><p>Curritulum vitae</p>
             <br>
             <a class="clique" href="#">Cliquez ici</a>
-        </div>
+        </div>-->
         <div class="contact" id="contact">
             <h2>Contact</h2>
             <ul>
@@ -94,7 +98,7 @@
                 </li>
             </ul>
         </div>
-    </main>
+    </main> 
     <footer>
         <p>
             &copy; - MIT - 2023
