@@ -251,7 +251,7 @@ section.projets {
 }
 
 /* Titre "Mes projets" */
- .projets h2{
+.projets h2{
     margin-top: 30vh;
     margin-left: 43vw;
     border: solid 1px;
@@ -264,83 +264,67 @@ section.projets {
 
 
 /* Images projets développement */
-section.projets ul{
+section.projets table{
     position: relative;
     top: 10vh;
     list-style: none;
 }
-.projets ul .refont_design a img{
+
+.projets tr a img{
     max-width: 30vw;
-    margin-left: 2vw;
-}
-.projets ul .etude_de_cas a img{
-    display: block;
-    /* max-width: 30vh; */
-    margin-left: 33vw;
-    margin-top: -42vh;
-}
-.projets ul .projet_professionnel a img{
-    display: block;
-    /* max-width: 30vh; */
-    margin-left: 66vw;
-    margin-top: -30vh;
+    margin: 2vh;
 }
 /* Fin images projets développement */
 
 
 /* Nom des projets de développement */
-.projets ul .refont_design p{
-    display: block;
-    color: #ffffff;
-    text-decoration: none;
-    max-width: 50vh;
-    margin-top: 2vh;
-    margin-left: 15vw;
-}
-.projets ul .etude_de_cas p{
-    display: block;
-    color: #ffffff;
-    max-width: 50vh;
-    margin-top: 2vh;
-    margin-left: 47vw;
-}
-.projets ul .projet_professionnel p{
-    display: block;
-    color: #ffffff;
-    max-width: 50vh;
-    margin-top: 2vh;
-    margin-left: 71vw;
+.projets tr p{
+    text-align: center;
 }
 /* Fin positionnement des noms des projets */
 
-.projets ul p a{
-    display: block;
-    cursor: pointer;
+
+/* Titre "Mes projets de stage en entreprise" */
+.projets h2:nth-child(3){
+    max-width: 30vh;
 }
-/* 
-.CV{
-    position: relative;
+
+
+/* Images projets de stage en entreprise */
+section.projets .entreprise tr a img{
+    margin: -2vh;
 }
-.CV p{
-    position: absolute;
-    top: 8vh;
-    left: 86.5vh;
+
+
+ /* Cacher l'image du milieu */
+.projets tr .hidden{
+    visibility: hidden;
 }
-.CV .clique{
-    position: absolute;
-    color: #ffffff;
-    top: 12vh;
-    left: 88.3vh;
-    padding: 3px;
-    max-width: 25vh;
-    border: solid 1px #000000;
+
+
+/* Cacher le texte du milieu */
+.projets tr p.hidden{
+    visibility: hidden;
+}
+
+
+/* Ajouter de la hauteur aux textes par rapports aux images pour les projets de stage en entreprise */
+.entreprise tr p{
+    margin-top: 3vh;
+}
+
+/* .CV p{
+    text-align: center;
+}
+.CV embed{
+    border: solid 1px #b42525;
     text-decoration: none;
-    background-color: RGB(0, 19, 54);
-}
-.CV a:hover{
-    color: #000000;
-    background-color: RGB(255, 254, 192);
-}*/
+    max-width: 17.5vw;
+    max-height: 10vh;
+    text-align: center;
+    margin-left: 43vw;
+} */
+
 
 main .contact{
     position: relative;
@@ -362,35 +346,25 @@ main .contact h2{
     text-align: center;
 }
 
-main .contact ul{
+.contact table{
     position: relative;
-    top: 45vh;
+    top: 25vh;
+    list-style: none;
 }
 
-main .contact ul .github img{
-    display: block;
-    max-width: 7vw;
-    margin-top: 5vh;
-    margin-left: 25vw;
+.contact tr img{
+    max-width: 10vw;
+    margin: 20vh;
 }
-main .contact ul .github p{
-    margin-top: 2vh;
-    margin-left: 22vw;
-}
-main .contact ul .mail img{
-    display: block;
-    max-width: 8vw;
-    margin-top: -19vh;
-    margin-left: 60vw;
-}
-main .contact ul .mail p{
-    margin-top: 1vh;
-    margin-left: 59vw;
+
+.contact tr td p{
+    margin-top: -15vh;
+    margin-left: 8vw;
 }
 
 
 footer{
     text-align: center;
-    margin-top: 50vh;
+    margin-top: 35vh;
     margin-bottom: 0;
 }
