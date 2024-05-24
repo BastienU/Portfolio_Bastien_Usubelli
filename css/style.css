@@ -12,7 +12,7 @@ body{
     margin: 0;
     line-height: 1.6;
     letter-spacing: .1rem;
-    background: linear-gradient(to right, RGB(0, 6, 24), RGB(200, 160, 100), RGB(0, 6, 24));
+    background: linear-gradient(to right, RGB(0, 6, 24), RGB(65, 202, 253), RGB(0, 6, 24));
     height: 100vh;
     color: #ffffff;
 }
@@ -177,6 +177,20 @@ main .presentation ul .BAC img{
     max-width: 30vh;
 }
 
+main .presentation ul li img:hover{
+    opacity: 30%;
+}
+
+main .presentation ul li p{
+    margin-top: -10vh;
+    color: #000000;
+    opacity: 0%;
+}
+
+main .presentation ul li p:hover{
+    opacity: 100%;
+}
+
 /* Gestion texte BAC */
 /* main .presentation ul .BAC p{
     border: none;
@@ -202,46 +216,16 @@ main section.presentation h2.competences{
 
 /* Gestion des images des langages de programmation */
 
-main .presentation ul li.HTML img{
-    display: block;
-    margin-top: 20vh;
-    margin-left: 5vw;
+.presentation table.competences{
+    margin-top: 10vh;
+}
+.presentation table.competences td img{
     max-width: 20vh;
+    margin: 2vw;
 }
 
-main .presentation ul li.CSS img{
-    display: block;
-    margin-top: -20.5vh;
-    margin-left: 20vw;
+.presentation table.competences td img.CSS{
     max-width: 15vh;
-}
-
-main .presentation ul li.JS img{
-    display: block;
-    margin-top: -20vh;
-    margin-left: 35vw;
-    max-width: 20vh;
-}
-
-main .presentation ul li.PHP img{
-    display: block;
-    margin-top: -17vh;
-    margin-left: 50vw;
-    max-width: 30vh;
-}
-
-main .presentation ul li.Java img{
-    display: block;
-    margin-top: -23vh;
-    margin-left: 70vw;
-    max-width: 20vh;
-}
-
-main .presentation ul li.Csharp img{
-    display: block;
-    margin-top: -22vh;
-    margin-left: 85vw;
-    max-width: 18vh;
 }
 
 /* Fin gestion des images des langages de programmation */
@@ -283,6 +267,29 @@ section.projets table{
 }
 /* Fin positionnement des noms des projets */
 
+
+/* CSS des pages web des projets */
+main.TravauxCours h2{
+    background-color: rgba(34, 95, 121, 0.467);
+    border: solid 2px #000000;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+main.TravauxCours h2.premier{
+    margin-top: 0vh;
+}
+
+main.TravauxCours img{
+    margin-top: -19vh;
+    margin-left: 65vw;
+}
+
+main.TravauxCours p{
+    margin-top: 20vh;
+    margin-left: 3vw;
+}
+/* Fin de la CSS des pages web des projets */
 
 /* Titre "Mes projets de stage en entreprise" */
 .projets h2:nth-child(3){

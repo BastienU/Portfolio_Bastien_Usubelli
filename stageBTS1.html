@@ -7,6 +7,82 @@
     <link rel="stylesheet" href="./css/stage1.css">
 </head>
 <body>
+    <div class="informations">
+
+        <img src="./asset/bandeau_app.png" alt="Bandeau de l'application" class="bandeau">
+        <h1>FMV-TOOL (Forced Mass Values)</h1>
+
+        <h3>Objectif de l’outil : </h3>
+        <p>
+            &nbsp; &nbsp; Ce logiciel permet de modifier des données en masse sur plusieurs fichiers depuis un répertoire.
+        </p>
+        <ul>
+            <li>Possibilité de traiter des fichiers d’un répertoire pour forcer les valeurs de différentes données.</li>
+            <li>
+                Champ pour renseigner un répertoire de dépôt des fichiers après la modification (répertoire créé par l’utilisateur ou par
+                l’outil s'il n'existe pas).
+            </li>
+            <li>Possibilité de déterminer le format de fichier dans le répertoires (si possible lecture automatique du format dans le dossier pour préparer l’étape 4).</li>
+            <li>Création de 3 group boxs dans les formats XML, Positionnel et CSV avec des labels et textboxs spécifiques à chaque format.</li>
+            <li>Champs générés en fonction du format de fichier à forcer.</li>
+            <li>Champ pour écrire le texte qui viendra modifier la position précédemment sélectionnée.</li>
+            <li>Modification de la donnée par l’outil.</li>
+            <li>Déplacement automatique des fichiers dans le répertoire créé à l’étape 2.</li>
+            <li>Si impossibilité de forcer la valeur d’une donnée, laisser le fichier dans le répertoire d’origine.</li>
+            <li>Génération de logs suite à la modification ou l’échec des données.</li>
+        </ul>
+
+        <h3>Expression des besoins de l'outil</h3>
+        <ul>
+            <li>Possibilité de fonctionner avec les formats XML, Fichiers plats positionnels (.txt) et CSV.</li>
+            <li>Possibilité d’importer et/ou d’exporter une configuration.</li>
+            <li>Possibilité de configurer des données multiples.</li>
+            <li>Génération de logs pour garder une trace de la modification.</li>
+        </ul>
+
+        <h3>Use case</h3>
+        <img src="./asset/usecaseFMVTool.png" alt="usecase FMV-Tool">
+        <h4>
+            Explication du Use Case : 
+        </h4>
+        <ul>
+            <li>
+                Premier cas : <br>
+                &nbsp; L'utilisateur configure les données à modifier selon le format des fichiers à traiter. <br>
+                Un enregistrement de la configuration est possible afin qu'elle soit réutilisée. <br>
+                Si une configuration a été sauvegardée préalablement, l'utilisateur peut l'importer.
+                
+            </li>
+            <li>
+                Second cas : <br>
+                &nbsp; L'utilisateur déclenche le traitement des fichiers : <br>
+                Analyse du répertoire, lecture des fichiers, récupération des données configurées dans le fichier et remplacement de la 
+                valeur à forcer. <br>
+                Pour chaque valeur remplacée, une log est générée dans un rapport qui peut être sauvegardé à la fin du traitement.
+            </li>
+        </ul>
+
+        <h3>Diagrammes de séquences</h3>
+
+        <h4>Configuration des données</h4>
+        <img src="./asset/diagramme_sequence_config.png" alt="diagramme sequence configuration données">
+
+        <h4>Importation d'une configuration</h4>
+        <img src="./asset/diagramme_sequence.png" alt="diagramme sequence">
+
+        <h4>Traitement de la modification des données</h4>
+        <img src="./asset/diagramme_sequence_traitement_modif.png" alt="diagramme sequence traitement modification des données">
+
+
+        <h3>Diagramme d'activité</h3>
+        <img src="./asset/diagramme_d_activite.png" alt="diagramme d'activité de l'outil">
+
+        <h3>Diagramme de classe</h3>
+        <img src="./asset/diagramme_classe.png" alt="diagramme de classe de l'outil">
+
+        <h3>Fonctionnement du FMV-Tool</h3>
+        <img src="./asset/Fonctionnement.png" alt="Fonctionnement de l'outil">
+    </div>
     
 </body>
 </html>

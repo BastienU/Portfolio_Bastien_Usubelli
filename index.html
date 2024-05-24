@@ -6,7 +6,9 @@
     <meta name="description" content="Bienvenue sur mon portfolio. Ici vous pourrez en apprendre plus sur moi et mon parcours">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/galerie.css">
     <link rel="shortcut icon" href="./favicon/ordinateur.png" type="image/x-icon">
+    <script type="text/javascript" src="./js/script.js"></script>
 </head>
 <body>
     <header>
@@ -39,47 +41,54 @@
             <ul>
                 <li class="BTS">
                     <img src="./asset/Ordinateur_debut_etudes.jpg" alt="imageOrdinateur">
-                    <!-- <p>Début du BTS en 2022 et fin prévue en 2024</p> -->
+                    <!-- <p class="souris">BTS</p> -->
+                    <p>Début du BTS en 2022 et fin prévue en 2024</p>
                 </li>
                 <li class="BAC">
                     <img src="./asset/Baccalauréat.png" alt="imageBac">
-                    <!-- <p>Baccalauréat général en 2022</p> -->
+                    <!-- <p class="souris">BAC</p> -->
+                    <p>Baccalauréat général en 2022</p>
                 </li>
             </ul>
             
             <h2 class="competences">Compétences</h2>
-            <ul class="competences">
-                <li class="HTML"><img src="./asset/HTML5_logoblanc.png" alt="logoHTML"></li>
-                <li class="CSS"><img src="./asset/CSS3_logoblanc.png" alt="logoCSS"></li>
-                <li class="JS"><img src="./asset/JavaScript-logo.png" alt="logoJS"></li>
-                <li class="PHP"><img src="./asset/PHP-logo.png" alt="logoPHP"></li>
-                <li class="Java"><img src="./asset/Java_logo.png" alt="logoJava"></li>
-                <li class="Csharp"><img src="./asset/Csharp_logo.png" alt="logoCsharp"></li>
-            </ul>
+            <table align="center" class="competences">
+                <tr>
+                    <td>
+                        <img src="./asset/HTML5_logoblanc.png" alt="logoHTML" class="HTML">
+                        <img src="./asset/CSS3_logoblanc.png" alt="logoCSS" class ="CSS">
+                        <img src="./asset/JavaScript-logo.png" alt="logoJS" class="JS">
+                        <img src="./asset/PHP-logo.png" alt="logoPHP" class="PHP">
+                        <img src="./asset/Java_logo.png" alt="logoJava"class="Java">
+                        <img src="./asset/Csharp_logo.png" alt="logoCsharp" class="Csharp">
+                        <img src="./asset/logoMysql.png" alt="logo_MySQL">
+                    </td>
+                </tr>
+            </table>
         </section>
         
         <section class="projets" id="mes_projets">
             <h2>Mes projets</h2>
             
-            <table align="center">
+            <table>
                 <tr>
                     <td>
-                        <a href="https://github.com/BastienU/Refont_design.git" target="_blank">
+                        <a href="./situationProFront.html" target="_blank">
+                            <img src="./asset/Blason_M2L.png" title="projet_professionnel_front" alt="Projet professionnel backend en front">
+                        </a>
+                        <p>Projet de Professionnalisation frontend</p>
+                    </td>
+                    <td>
+                        <a href="./projets.html" target="_blank">
                             <img src="./asset/cover500.png" title="Refont_design" alt="Projet de correction du code d'un site déjà créé">
                         </a>
-                        <p>Refont Design</p>
+                        <p>Projets vus en cours</p>
                     </td>
                     <td>
-                        <a href="https://github.com/BastienU/etude_de_cas" target="_blank">
-                            <img src="./asset/CaseStudies500.png" title="etude_de_cas" alt="Projet de reproduction d'un site à partir d'une image">
+                        <a href="./situationProJava.html" target="_blank">
+                            <img src="./asset/Projet_professionnel_java500.png" title="projet_professionnel_java" alt="Projet professionnel backend en Java">
                         </a>
-                        <p>Etude de cas</p>
-                    </td>
-                    <td>
-                        <a href="./projet_java.html" target="_blank">
-                            <img src="./asset/Projet_professionnel_java500.png" title="projet_professionnel" alt="Projet professionnel backend en Java">
-                        </a>
-                        <p>Projet de Professionnalisation</p>
+                        <p>Projet de Professionnalisation Java</p>
                     </td>
                 </tr>
             </table>
@@ -89,7 +98,7 @@
             <table align="center" class="entreprise">
                 <tr>
                     <td>
-                        <a href="https://drive.google.com/file/d/16ZhZYb5X21CJrlha32SYIdpc-ou0-wCg/view?usp=sharing" target="_blank">
+                        <a href="./stageBTS1.html" target="_blank">
                             <img src="./asset/Stage1EssilorLuxottica500.png" title="FMV-Tool" alt="Redirection vers la documentation du 
                             projet réalisé au cours du stage de première année de BTS">
                         </a>
@@ -103,7 +112,7 @@
                         <p>Stage de deuxième année</p>
                     </td>
                     <td>
-                        <a href="https://drive.google.com/file/d/1hnPS5oYHqMGXzWuganQxXr9xgEARSica/view?usp=sharing" target="_blank">
+                        <a href="https://docs.google.com/document/d/1jeJLIzz5qObLcr5FAcVIU0u-nLpqaUaspWLuq1eP19E/edit?usp=sharing" target="_blank">
                             <img src="./asset/Stage2EssilorLuxottica500.png" title="FMV-Tool" alt="Redirection vers la documentation du 
                             projet réalisé au cours du stage de première année de BTS">
                         </a>
@@ -130,8 +139,10 @@
                         <p>https://github.com/BastienU</p>
                     </td>
                     <td>
-                        <img src="./asset/Mail.png" alt="Logo" loading="lazy">
-                        <p>bastien.u04@gmail.com</p>
+                        <a href="mailto:bastien.u04@gmail.com">
+                            <img src="./asset/Mail.png" alt="Logo" loading="lazy">
+                        </a>
+                        <!-- <p>bastien.u04@gmail.com</p> -->
                     </td>
                 </tr>
             </table>
