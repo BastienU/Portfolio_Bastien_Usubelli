@@ -280,16 +280,37 @@ main.TravauxCours h2.premier{
     margin-top: 0vh;
 }
 
-main.TravauxCours img{
-    margin-top: -19vh;
+main.TravauxCours img.imgProjet{
+    margin-top: -50vh;
     margin-left: 65vw;
 }
 
-main.TravauxCours p{
-    margin-top: 20vh;
+main.TravauxCours img.couleurs{
+    max-width: 50vw;
+    margin-top: 2vh;
     margin-left: 3vw;
 }
+
+main.TravauxCours p{
+    margin-top: 5vh;
+    margin-left: 3vw;
+    max-width: 60vw;
+}
+
+main.TravauxCours p.typographique{
+    margin-top: 1vh;
+}
+
+main.TravauxCours a{
+    margin-left: 3vw;
+    text-decoration: underline;
+}
+
+main.TravauxCours a:hover{
+    color: #73a8ed;
+}
 /* Fin de la CSS des pages web des projets */
+
 
 /* Titre "Mes projets de stage en entreprise" */
 .projets h2:nth-child(3){
@@ -366,7 +387,7 @@ main .contact h2{
 
 .contact tr td p{
     margin-top: -15vh;
-    margin-left: 8vw;
+    margin-left: 10vw;
 }
 
 
