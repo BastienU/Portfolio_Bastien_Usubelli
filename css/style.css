@@ -12,7 +12,8 @@ body{
     margin: 0;
     line-height: 1.6;
     letter-spacing: .1rem;
-    background: linear-gradient(to right, RGB(0, 6, 24), RGB(65, 202, 253), RGB(0, 6, 24));
+    background: linear-gradient(135deg, rgba(0, 6, 24), rgba(65, 202, 253)75%);
+    background-attachment: fixed;
     height: 100vh;
     color: #ffffff;
 }
@@ -96,7 +97,7 @@ nav ul li a:hover{
 /* End Menu for moving on the site */
 
 header img{
-    width : 98vw;
+    width : 98.9vw;
     height : 100vh;
 }
 
@@ -122,11 +123,11 @@ main .presentation h2.a_propos{
 /* Texte "A propos de moi" */
 
 main .presentation p.a_propos{
-    text-align: center;
+    text-align: justify;
     margin-top: 5vh;
-    margin-left: 31vw;
+    margin-left: 23vw;
     border: solid 1px;
-    max-width: 35%;
+    max-width: 50%;
     padding: 1vh;
 }
 
@@ -146,21 +147,49 @@ main .presentation h2.etudes{
 
 /* Ligne chronologique études */
 
+.etudes .friseV{
+    border-right: solid 1px #ffffff;
+}
+
+.etudes .friseH{
+    border-bottom: solid 1px #ffffff;
+}
+
+
 hr{
     position: relative;
-    top: 20vh;
+    top: 10vh;
     left: 0vw;
-    width: 30vh;
-    transform: rotate(90deg);
+    width: 60vh;
+    /* transform: rotate(90deg); */
     z-index: -1;
 }
 
 /* Gestion image BTS*/
-main .presentation ul .BTS img{
-    margin-top: 0vh;
-    margin-left: 0vw;
+.etudes td img{
+    margin-top: -5vh;
+    margin-left: 22vw;
     clip-path: circle(40%);
-    max-width: 15vh;
+    /* max-width: 15vh; */
+}
+
+.etudes td.BAC img{
+    max-width: 35vh;
+}
+
+.etudes td.BTS img{
+    max-width: 16vh;
+}
+
+/* Positionnement textes frise chronologique */
+
+.etudes .BAC p{
+    margin-top: -5vh;
+    margin-left: 22vw;
+}
+
+.etudes .BTS p{
+    margin-top: 10vh;
 }
 
 /* Gestion texte BTS */
@@ -170,27 +199,6 @@ main .presentation ul .BTS img{
     max-width: 20rem;
 } */
 
-/* Gestion image BAC*/
-main .presentation ul .BAC img{
-    margin-top: 15vh;
-    margin-left: 1vw;
-    max-width: 30vh;
-}
-
-main .presentation ul li img:hover{
-    opacity: 30%;
-}
-
-main .presentation ul li p{
-    margin-top: -10vh;
-    color: #000000;
-    opacity: 0%;
-}
-
-main .presentation ul li p:hover{
-    opacity: 100%;
-}
-
 /* Gestion texte BAC */
 /* main .presentation ul .BAC p{
     border: none;
@@ -199,6 +207,8 @@ main .presentation ul li p:hover{
     left: 100vh;
     max-width: 20vh;
 } */
+
+/* Fin Ligne chronologique études */
 
 /* Titre "Compétences" */
 
@@ -277,7 +287,7 @@ main.TravauxCours h2{
 }
 
 main.TravauxCours h2.premier{
-    margin-top: 0vh;
+    margin-top: -3vh;
 }
 
 main.TravauxCours img.imgProjet{
@@ -353,6 +363,21 @@ section.projets .entreprise tr a img{
     margin-left: 43vw;
 } */
 
+.veilleTech h2{
+    margin-top: 30vh;
+    margin-left: 43vw;
+    border: solid 1px;
+    padding: 4px;
+    font-size: 2rem;
+    font-weight: bold;
+    max-width: 25vh;
+    text-align: center;
+}
+
+.veilleTech img{
+    margin-top: 3vh;
+}
+
 
 main .contact{
     position: relative;
@@ -364,7 +389,7 @@ main .contact{
 
 main .contact h2{
     position: relative;
-    top: 35vh;
+    top: 3vh;
     left: 43vw;
     border: solid 1px;
     padding: 4px;
@@ -376,7 +401,7 @@ main .contact h2{
 
 .contact table{
     position: relative;
-    top: 25vh;
+    top: 5vh;
     list-style: none;
 }
 
@@ -393,6 +418,6 @@ main .contact h2{
 
 footer{
     text-align: center;
-    margin-top: 35vh;
+    margin-top: 15vh;
     margin-bottom: 0;
 }

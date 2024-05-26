@@ -12,7 +12,7 @@ body{
     margin: 0;
     background-image: url(/asset/InterfaceOutil.png);
     background-repeat: no-repeat;
-    background-size: 193vh;
+    background-size: 100%;
     background-attachment: fixed;
     line-height: 1.6;
     letter-spacing: .1rem;
@@ -37,8 +37,8 @@ a{
 
 img.bandeau{
     position: fixed;
-    top: 0;
-    margin-left: 38.6vw;
+    top: -0.1vh;
+    margin-left: 39.5vw;
     max-width: 61%;
 }
 

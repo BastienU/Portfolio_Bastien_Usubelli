@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bienvenue sur mon portfolio. Ici vous pourrez en apprendre plus sur moi et mon parcours">
     <title>Portfolio</title>
+    <script type="text/javascript" src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/galerie.css">
     <link rel="shortcut icon" href="./favicon/ordinateur.png" type="image/x-icon">
-    <script type="text/javascript" src="./js/script.js"></script>
 </head>
 <body>
     <header>
@@ -31,26 +30,155 @@
         <section class="presentation">
             <h2 id="a_propos_de_moi" class="a_propos">A propos de moi</h2>
             <p class="a_propos">
-                Je m'appelle Bastien Usubelli.
-                <br>Âgé de 20 ans, je suis en seconde année de BTS SIO SLAM à l'école ITIC Paris et réalise ce portfolio
-                avec ce que j'ai appris durant ces années.
+                Je m'appelle Bastien Usubelli, j'ai 20 ans.
+                
+                <br>Suite à l'obtention de mon baccalauréat général avec comme spécialités Mathématiques et Anglais, 
+                j'ai décidé de commencer des études dans le développement informatique. 
+                Depuis mon stage de découverte en année de troisième, j'ai été particulièrement intéressé par ce domaine, ce qui m'a 
+                convaincu à me diriger vers une formation de BTS SIO SLAM et m'a amené à rentrer à l'école ITIC Paris.
+                <br><br>
+                Durant mes années de lycée, j'ai appris les bases du langage python en autodidacte à l'aide de tutos et d'exercices en ligne.
+                <br><br>
+                Au cours de ces deux années à l'école ITIC Paris, j'ai réalisé ce portfolio dans l'objectif de lister les principaux projets 
+                traités lors de cette formation, ainsi que lors de mes deux stages en entreprise.
             </p>
             <h2 class="etudes">Etudes</h2>
-            <br>
-            <hr>
-            <ul>
-                <li class="BTS">
+
+            <!-- <p class="etudes" id="visualization">
+
+                <script type="text/javascript">
+                    
+                    const container = document.getElementById("visualization");
+                    
+                    // Créer un jeu de données
+                    const items = new vis.DataSet([
+                        { id: 1, content: "Terminale générale spécialités Maths et LLCE anglais option Euro-Espagnol", start: "2021-09-01", end: "2022-07-02" },
+                        { id: 2, content: "Baccalaureat Général", start: "2022-07-02"},
+                        { id: 3, content:"Première année de BTS SIO SLAM", start:"2022-09-01", end:"2023-06-30"},
+                        { id: 4, content:"Seconde année de BTS SIO SLAM", start:"2023-09-01", end:"2024-06-30"},
+                        { id: 5, content:"BTS SIO SLAM", start:"2024-07-10"}
+                    ]);
+                    
+                    // Configuration de la Timeline
+                    const options = {};
+                    
+                    // Création de la Timeline
+                    const timeline = new vis.Timeline(container, items, options);
+                    </script>
+            </p> -->
+
+            <!-- <hr>
+            <table class="etudes">
+                <tr>
+                    <td class="BAC">
+                        <img src="./asset/Baccalauréat.png" alt="imageBac">
+                        <p>Baccalauréat général en 2022</p>
+                    </td>
+                
+                    <td class="BTS">
                     <img src="./asset/Ordinateur_debut_etudes.jpg" alt="imageOrdinateur">
-                    <!-- <p class="souris">BTS</p> -->
                     <p>Début du BTS en 2022 et fin prévue en 2024</p>
-                </li>
-                <li class="BAC">
-                    <img src="./asset/Baccalauréat.png" alt="imageBac">
-                    <!-- <p class="souris">BAC</p> -->
-                    <p>Baccalauréat général en 2022</p>
-                </li>
-            </ul>
+                    </td>
+                </tr>
+            </table> -->
             
+            <br><br>
+            <table class="etudes" align="center">
+                <!-- Début Terminale -->
+                <tr>
+                    <td class="friseV" width="20px">09/2021&nbsp;&nbsp;</td>
+                    <td class="friseH" width="50px">&nbsp;</td>
+                    <td width="250px" align="justify" rowspan="3">Année de terminale générale spécialités Mathématiques et LLCE Anglais avec l'option Euro-Espagnol</td>
+                    <td width="50px">&nbsp;</td>
+                    <td width="250px" align="justify" rowspan="3">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="friseV" rowspan="2">&nbsp;</td>
+                    <td rowspan="2">&nbsp;</td>
+                    <td rowspan="2">&nbsp;</td>
+                </tr>
+                <tr></tr>
+                <!-- Fin Terminale -->
+
+                <!-- Début Bac -->
+                <tr>
+                    <td class="friseV">07/2022&nbsp;&nbsp;</td>
+                    <td class="friseH">&nbsp;</td>
+                    <td class="friseH">&nbsp;</td>
+                    <td class="friseH">&nbsp;</td>
+                    <td rowspan="2">
+                        <img src="./asset/Baccalauréat.png" alt="ImageBac" style="margin-left: 0rem; margin-top: 2vh" width="100%">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="friseV"></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <!-- Fin Bac -->
+
+                <!-- Première année de BTS -->
+                <tr>
+                    <td class="friseV">09/2022&nbsp;&nbsp;</td>
+                    <td class="friseH">&nbsp;</td>
+                    <td align="justify" rowspan="2">Première année de BTS SIO SLAM à l'école ITIC Paris de Septembre 2022 à Juin 2023.</td>
+                    <td rowspan="2">&nbsp;</td>
+                    <td align="justify" rowspan="2">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="friseV">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <!-- Fin Première année de BTS -->
+
+                <!-- Début Stage 1 -->
+                <tr>
+                    <td class="friseV">07/2022&nbsp;&nbsp;</td>
+                    <td class="friseH">&nbsp;</td>
+                    <td class="friseH">&nbsp;</td>
+                    <td class="friseH">&nbsp;</td>
+                    <td align="justify" rowspan="2">Stage de six semaines en entreprise du 15 Mai 2023 au 23 Juin 2023 chez EssilorLuxottica</td>
+                </tr>
+                <tr>
+                    <td class="friseV"></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <!-- Fin Stage 1 -->
+
+                <!-- Début Deuxième année -->
+                <tr>
+                    <td class="friseV" width="20px">09/2023&nbsp;&nbsp;</td>
+                    <td class="friseH" width="50px">&nbsp;</td>
+                    <td align="justify" rowspan="2">Seconde année de BTS SIO SLAM à l'école ITIC Paris de Septembre 2023 à Juin 2024.</td>
+                    <td rowspan="2">&nbsp;</td>
+                    <td align="justify" rowspan="2">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="friseV">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <!-- Début Stage seconde année -->
+                <tr>
+                    <td class="friseV">11/2023&nbsp;&nbsp;</td>
+                    <td class="friseH">&nbsp;</td>
+                    <td class="friseH">&nbsp;</td>
+                    <td class="friseH">&nbsp;</td>
+                    <td align="justify" rowspan="2">Stage de six semaines en entreprise du 06 Novembre 2023 au 20 Décembre 2023 chez EssilorLuxottica</td>
+                </tr>
+                <tr>
+                    <td class="friseV"></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <!-- Fin Stage seconde année -->
+
+            </table>
+
             <h2 class="competences">Compétences</h2>
             <table align="center" class="competences">
                 <tr>
@@ -121,6 +249,14 @@
                 </tr>
             </table>
 
+        </section>
+
+        <section align="center" class="veilleTech">
+            <h2>Veille technologique</h2>
+
+            <a href="./veilleTechnologique.html" target="_blank" >
+                <img src="./asset/veilleTech.png" alt="Veille technologique">
+            </a>
 
         </section>
 
@@ -135,13 +271,14 @@
             <table align="center">
                 <tr>
                     <td>
-                        <img src="./asset/Github.png" alt="Logo" loading="lazy">
-                        <p>https://github.com/BastienU</p>
+                        <a href="https://github.com/BastienU"></a><img src="./asset/Github.png" alt="Logo" loading="lazy"></a>
+                    </td>
+                    <td>
+                        <a href="https://www.linkedin.com/in/bastien-usubelli-993257238/"><img src="./asset/logoLinkedIn.png" alt="Logo LinkedIn"></a>
                     </td>
                     <td>
                         <!-- <a href="mailto:bastien.u04@gmail.com"> -->
-                            <img src="./asset/Mail.png" alt="Logo" loading="lazy">
-                        </a>
+                        <a href=""><img src="./asset/Mail.png" alt="Logo" loading="lazy"></a>
                         <p>bastien.u04@gmail.com</p>
                     </td>
                 </tr>
