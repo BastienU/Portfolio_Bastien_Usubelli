@@ -363,6 +363,7 @@ section.projets .entreprise tr a img{
     margin-left: 43vw;
 } */
 
+/* Positionnement texte veille technologique */
 .veilleTech h2{
     margin-top: 30vh;
     margin-left: 43vw;
@@ -374,15 +375,44 @@ section.projets .entreprise tr a img{
     text-align: center;
 }
 
+/* Positionnement image veille technologique */
 .veilleTech img{
     margin-top: 3vh;
 }
 
+/* Début CSS page veille technologique */
+
+h1.titre{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 2vh;
+}
+
+h2.thème{
+    text-align: center;
+}
+
+.veille h3 {
+    font-weight: bold;
+    margin: 2vh;
+}
+
+.veille p{
+    margin-left: 5vh;
+    max-width: 50vw;
+}
+
+.veille img{
+    max-width: 20%;
+    margin-left: 20vw;
+}
+/* Fin CSS page veille technologique */
 
 main .contact{
     position: relative;
     margin: 0 auto;
 } 
+
 
 
 /* Titre contact */
